@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import ContactStrip from "@/components/ContactStrip";
 
 const WHATSAPP_LINK = "https://wa.me/447974209963";
@@ -129,9 +130,9 @@ export default function ColourAnalysisWithFriends() {
               </svg>
               Contact me via WhatsApp
             </a>
-            <a href="/contact" className="btn-outline no-underline">
+            <Link href="/contact" className="btn-outline no-underline">
               Get in touch
-            </a>
+            </Link>
           </div>
         </div>
       </section>

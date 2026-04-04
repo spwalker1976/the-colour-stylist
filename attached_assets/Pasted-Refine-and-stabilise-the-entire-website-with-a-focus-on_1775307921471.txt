@@ -1,0 +1,84 @@
+Refine and stabilise the entire website with a focus on navigation, routing, usability and premium polish. Do not rebuild from scratch. Improve what exists.
+
+PRIMARY ISSUE TO FIX:
+The navigation is not functioning correctly:
+- “Services” is not properly clickable
+- Dropdown links are unreliable or not clickable
+- Mobile menu behaviour is inconsistent
+
+Fix navigation completely:
+
+DESKTOP NAVIGATION:
+- “Services” must be BOTH:
+  1. A clickable link to /services
+  2. A dropdown trigger for subpages
+- Dropdown must contain:
+  - Colour Analysis in Person → /services/colour-analysis-in-person
+  - Colour Analysis with Friends → /services/colour-analysis-with-friends
+  - Wardrobe Declutter → /services/wardrobe-declutter
+- Dropdown must:
+  - stay open long enough to interact with
+  - not disappear on small cursor movement
+  - have proper spacing and hover states
+  - have no invisible overlays blocking clicks
+  - use correct z-index layering
+
+MOBILE NAVIGATION:
+- Hamburger menu must work cleanly
+- “Services” must expand/collapse as an accordion
+- Include “All Services” link at top of submenu → /services
+- All submenu items must be easily tappable
+- Ensure no tap conflicts or dead zones
+- Ensure smooth open/close behaviour
+
+ROUTING:
+Ensure all pages exist and are correctly routed:
+- /
+- /services
+- /services/colour-analysis-in-person
+- /services/colour-analysis-with-friends
+- /services/wardrobe-declutter
+- /about
+- /what-is-colour-analysis
+- /testimonials
+- /contact
+
+Ensure:
+- No broken links
+- No anchor-based fake routing
+- Proper Next.js App Router usage
+- Links use correct Link components
+- Navigation works across all pages
+
+USABILITY FIXES:
+- Fix any overlapping elements blocking clicks
+- Ensure buttons are always clickable
+- Improve hit areas for links and buttons
+- Ensure consistent hover + active states
+- Ensure keyboard accessibility where possible
+
+DESIGN POLISH (DO NOT CHANGE STRUCTURE):
+- Improve header spacing and alignment
+- Make navigation feel more premium and minimal
+- Ensure consistent button styling (dark teal)
+- Improve dropdown visual design (clean, elegant, not bulky)
+- Improve mobile menu spacing and readability
+- Ensure consistent spacing between sections
+- Ensure images are correctly scaled and not cropped awkwardly
+
+CTA CONSISTENCY:
+- All CTAs must be:
+  - “Contact me via WhatsApp”
+  - “Get in touch”
+- WhatsApp link must use: https://wa.me/447974209963
+- Contact page links must work properly
+
+IMPORTANT:
+- Do NOT rewrite content
+- Do NOT remove pages
+- Do NOT restructure the site
+- Do NOT convert everything into one page
+- Only fix functionality, routing and polish
+
+GOAL:
+Make the site feel like a clean, high-end personal brand website with flawless navigation and smooth user experience across desktop and mobile.
