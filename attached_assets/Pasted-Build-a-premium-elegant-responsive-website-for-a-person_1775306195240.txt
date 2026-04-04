@@ -1,0 +1,430 @@
+Build a premium, elegant, responsive website for a personal styling and colour analysis business called “The Colour Stylist”.
+
+Tech stack:
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- Use local images from /public/images
+- Clean reusable components
+- Mobile-first responsive design
+- No CMS
+- No ecommerce
+- No booking system
+
+Overall direction:
+Create a calm, feminine, luxury-style website with a soft blush background, refined typography, dark teal buttons, minimal navigation, generous spacing, and a polished editorial feel. It should feel more premium than a Wix clone, but still closely reflect the existing site’s structure and copy.
+
+Brand style:
+- Soft blush / pale nude pink background
+- Muted charcoal text
+- Deep muted teal buttons
+- Elegant serif feel for the main site title/logo
+- Clean sans-serif for navigation and body copy
+- Minimal, structured, modern, warm, personal
+- Very subtle hover effects and almost no animation
+- No loud gradients, no flashy effects, no clutter
+
+Navigation:
+Top-level nav:
+- Home
+- Services
+- About
+- What is Colour Analysis
+- Testimonials
+- Contact
+
+Under Services dropdown / submenu:
+- Colour Analysis in Person
+- Colour Analysis with Friends
+- Wardrobe Declutter
+
+Navigation behaviour:
+- Desktop: clean horizontal nav with Services dropdown
+- Mobile: hamburger menu with expandable Services submenu
+- Sticky header
+- Footer with quick links, service links, contact details, Instagram placeholder and copyright
+
+Business logic:
+- Remove all booking features
+- Replace booking CTAs with:
+  - “Contact me via WhatsApp”
+  - “Get in touch”
+- All CTAs should link either to WhatsApp or the Contact page
+- Main enquiry method is WhatsApp
+- Include clickable WhatsApp deep link: https://wa.me/447974209963
+- Include email link: mailto:clare@thecolourstylist.com
+
+Contact details:
+- Phone / WhatsApp: +44 7974 209963
+- Email: clare@thecolourstylist.com
+- Location: Marlow, Buckinghamshire, UK
+
+Map:
+- Embed a Google Map centred on Marlow, Buckinghamshire, UK on the Contact page
+
+Images:
+Use these exact image paths:
+- /images/home-hero.jpg
+- /images/about-clare.jpg
+- /images/what-is-colour-analysis.jpg
+- /images/services-background.jpg
+- /images/in-person-colour-analysis.jpg
+- /images/colour-analysis-with-friends.jpg
+- /images/wardrobe-declutter.jpg
+
+Do not use an image for testimonials background. Use a dark elegant solid colour block instead.
+
+Create reusable components:
+- Header
+- MobileMenu
+- Footer
+- PageHero
+- SectionContainer
+- CTAButtons
+- ServiceCard
+- TestimonialCard
+- ContactStrip
+
+Pages and content:
+
+1) HOME PAGE
+
+Hero section:
+- Two-column layout on desktop, stacked on mobile
+- Left text, right image
+- Image: /images/home-hero.jpg
+
+Heading:
+DISCOVER THE COLOURS
+THAT MAKE YOU GLOW
+
+Body:
+Professional colour analysis in Marlow, designed to help you feel confident in what you wear.
+
+For women at every stage of life, whether you're refining your style, or looking to feel more like yourself again.
+
+Buttons:
+- Explore Services → /services
+- Contact me via WhatsApp → WhatsApp link
+
+Services overview section:
+- Use /images/services-background.jpg as the section background
+- Overlay three elegant cards linking to service pages
+
+Card 1:
+Title: Colour Analysis in Person
+Text: A personalised in-person colour analysis using the 12 season system to identify the shades that naturally enhance your features.
+Button: Learn more
+
+Card 2:
+Title: Colour Analysis with Friends
+Text: A relaxed and enjoyable session with friends or family, where you'll each discover the colours that make you glow.
+Button: Learn more
+
+Card 3:
+Title: Wardrobe Declutter
+Text: A practical styling session to edit, refine and create a wardrobe that works for your personal style.
+Button: Learn more
+
+About preview section:
+- Two-column layout
+- Left image: /images/about-clare.jpg
+- Right text
+
+Heading:
+ABOUT ME
+
+Text:
+Hi, I'm Clare, a certified colour and image consultant based in Marlow.
+
+With 15 years' experience as a fashion buyer, I bring a practical, real-world approach to colour and style.
+
+I offer one-to-one and small group personalised colour analysis sessions, designed to help you discover the colours that make you glow and feel confident in what you wear.
+
+I work with women at all stages of life, often at a point of change - whether that's midlife, a new chapter, or a desire to feel more like yourself again.
+
+My approach is relaxed, considered and personal, creating a space where you can feel at ease while discovering what truly suits you.
+
+Button:
+Explore About → /about
+
+What is Colour Analysis preview section:
+- Two-column layout
+- Text left, image right
+- Image: /images/what-is-colour-analysis.jpg
+
+Heading:
+WHAT IS COLOUR ANALYSIS?
+
+Subheading:
+Understanding the 12 season system
+
+Text:
+Colour analysis identifies the colours that naturally harmonise with your skin, hair and eye colour, helping you look brighter and healthier.
+
+Using professional drapes, I assess how different colours interact with your natural undertone to determine your most flattering palette.
+
+I work with the 12 season colour system, which refines the four core seasons into a more personalised palette tailored to you.
+
+Button:
+Learn More → /what-is-colour-analysis
+
+Testimonials preview section:
+- Dark elegant solid background block
+- Heading: TESTIMONIALS
+- Show 3 placeholder testimonials in premium cards
+- Make testimonials editable via a simple data array
+
+Use these placeholder testimonials:
+1. Sarah R.
+Clare made the whole experience feel relaxed and enjoyable. I left with a much clearer understanding of the colours that suit me and far more confidence in what I wear.
+
+2. Rachel P.
+Such a thoughtful and professional session. The advice was practical, easy to apply and has genuinely changed the way I shop for clothes and makeup.
+
+3. Emma R.
+I had such a lovely experience. Clare immediately put me at ease, and the results have made getting dressed so much simpler and more enjoyable.
+
+Contact preview strip:
+Heading:
+Ready to get in touch?
+
+Text:
+If you'd like to enquire about a session, the easiest way to reach me is via WhatsApp.
+
+Buttons:
+- Contact me via WhatsApp
+- View Contact Page → /contact
+
+2) SERVICES PAGE
+
+Heading:
+SERVICES
+
+Intro:
+Explore personalised colour and styling services designed to help you feel more confident in what you wear.
+
+Display 3 large linked service cards for:
+- Colour Analysis in Person
+- Colour Analysis with Friends
+- Wardrobe Declutter
+
+Use strong visual layout and improve on the original Wix presentation with better spacing and hierarchy.
+
+3) COLOUR ANALYSIS IN PERSON PAGE
+
+Heading:
+IN PERSON COLOUR ANALYSIS
+
+Hero image:
+- /images/in-person-colour-analysis.jpg
+
+Text:
+A personalised one-to-one colour analysis session in my Marlow studio. Discover the colours that make you glow.
+
+Over the course of your session, I assess your undertone, contrast level and chroma to determine which of the twelve seasonal colour palettes enhances your natural colouring most beautifully, using professional drapes and seasonal flags.
+
+Your personalised results include:
+- Your individual colour season and sub season
+- Your most flattering WOW colours, plus which shades to avoid
+- Your best neutral shades
+- Personalised hair and makeup colour guidance
+- The jewellery tones that complement your colouring best
+- A digital colour wallet for your phone, featuring shades from your unique palette
+
+Section heading:
+WHY HAVE A COLOUR ANALYSIS?
+
+Text:
+Once you dress in your colours:
+- Your skin appears clearer, brighter and more radiant
+- Your eyes stand out and your natural colouring is enhanced
+- Getting dressed becomes effortless
+- You stop wasting money on clothes that don't suit you
+- Shopping becomes quicker and easier
+- You feel more confident in what you wear, every day
+
+Closing text:
+In-person colour analysis sessions take place at my home in Marlow, with travel available by arrangement.
+
+CTAs:
+- Contact me via WhatsApp
+- Get in touch → /contact
+
+4) COLOUR ANALYSIS WITH FRIENDS PAGE
+
+Heading:
+COLOUR ANALYSIS WITH FRIENDS
+
+Hero image:
+- /images/colour-analysis-with-friends.jpg
+
+Text:
+A relaxed, personalised colour analysis experience to enjoy with friends. Discover the colours that make you glow - together.
+
+Over the course of your session, I assess each person's undertone, contrast level and chroma to determine which of the twelve seasonal colour palettes enhances their natural colouring most beautifully, using professional drapes and seasonal flags.
+
+Your personalised results include:
+- Individual colour season and sub season for each guest
+- Most flattering WOW colours, plus shades to avoid
+- Best neutral shades
+- Personalised hair and makeup colour guidance
+- Jewellery tones that complement each person's colouring
+- A digital colour wallet for each guest's phone featuring shades from their palette
+
+Section heading:
+WHY BOOK WITH FRIENDS?
+
+Text:
+- Perfect for birthdays, small gatherings or a stylish shared experience
+- Enjoy those transformative moments together
+- Discover what truly suits you and how it differs from your friends
+- A relaxed, sociable and memorable experience
+
+Closing text:
+Group sessions are hosted in Marlow, with travel available by arrangement.
+
+CTAs:
+- Contact me via WhatsApp
+- Get in touch → /contact
+
+5) WARDROBE DECLUTTER PAGE
+
+Heading:
+WARDROBE DECLUTTER
+
+Hero image:
+- /images/wardrobe-declutter.jpg
+
+Text:
+The first step to creating a well-curated capsule wardrobe is a thoughtful declutter. This focused, practical session is designed to streamline your wardrobe and make getting dressed feel effortless.
+
+During your session, we will:
+- Review your wardrobe piece by piece, removing items that no longer serve you
+- Identify what works for your colouring, shape and lifestyle
+- Create outfit combinations from what you already own
+- Highlight key gaps where needed
+- Leave you with a more streamlined, cohesive and organised wardrobe
+
+Details:
+- Duration: 2-3 hours
+- Location: Marlow and surrounding areas, within a 30-minute radius
+
+Closing text:
+This session focuses on editing and styling your existing wardrobe. For a full colour analysis, please see the colour analysis services. For best results, many clients choose to have a colour analysis before their wardrobe declutter.
+
+CTAs:
+- Contact me via WhatsApp
+- Get in touch → /contact
+
+6) ABOUT PAGE
+
+Heading:
+ABOUT ME
+
+Two-column layout:
+- Left image: /images/about-clare.jpg
+- Right text
+
+Text:
+Hi, I'm Clare, a certified colour and image consultant based in Marlow.
+
+With 15 years' experience as a fashion buyer, I bring a practical, real-world approach to colour and style.
+
+I offer one-to-one and small group personalised colour analysis sessions, designed to help you discover the colours that make you glow and feel confident in what you wear.
+
+I work with women at all stages of life, often at a point of change - whether that's midlife, a new chapter, or a desire to feel more like yourself again.
+
+My approach is relaxed, considered and personal, creating a space where you can feel at ease while discovering what truly suits you.
+
+Add a soft CTA strip:
+Explore the services or get in touch via WhatsApp to find out which session is right for you.
+
+7) WHAT IS COLOUR ANALYSIS PAGE
+
+Heading:
+WHAT IS COLOUR ANALYSIS?
+
+Layout:
+- Refined split section with text and /images/what-is-colour-analysis.jpg
+
+Text:
+Understanding the 12 season system
+
+Colour analysis identifies the colours that naturally harmonise with your skin, hair and eye colour, helping you look brighter and healthier.
+
+Using professional drapes, I assess how different colours interact with your natural undertone to determine your most flattering palette.
+
+I work with the 12 season colour system, which refines the four core seasons into a more personalised palette tailored to you.
+
+Add a benefits section:
+- Brighter complexion
+- More flattering clothing choices
+- Easier shopping
+- Greater confidence in getting dressed
+- Better understanding of makeup, hair and accessory tones
+
+Add CTA buttons:
+- Explore Services
+- Contact me via WhatsApp
+
+8) TESTIMONIALS PAGE
+
+Heading:
+TESTIMONIALS
+
+Create 6 placeholder testimonials stored in a simple data array for easy editing.
+
+Use these:
+- Sarah R. — Clare made the whole experience feel relaxed and enjoyable. I left with a much clearer understanding of the colours that suit me and far more confidence in what I wear.
+- Rachel P. — Such a thoughtful and professional session. The advice was practical, easy to apply and has genuinely changed the way I shop for clothes and makeup.
+- Emma R. — I had such a lovely experience. Clare immediately put me at ease, and the results have made getting dressed so much simpler and more enjoyable.
+- Lucy H. — The session was insightful, personal and incredibly helpful. I now understand which shades work for me and why.
+- Helen M. — Clare has a lovely, calm approach and made the whole process feel easy. I came away feeling more confident and much clearer on my style.
+- Kate W. — A brilliant experience from start to finish. The advice felt practical and realistic, and I’ve already noticed the difference when choosing what to wear.
+
+9) CONTACT PAGE
+
+Heading:
+CONTACT
+
+Intro:
+For bookings and enquiries, please get in touch via WhatsApp or email.
+
+Display clearly:
+- WhatsApp / phone: +44 7974 209963
+- Email: clare@thecolourstylist.com
+- Location: Marlow, Buckinghamshire, UK
+
+Buttons:
+- Contact me via WhatsApp
+- Send an email
+
+Embed a Google Map centred on Marlow, Buckinghamshire, UK
+
+Add note:
+Sessions are held in Marlow, with some travel available by arrangement.
+
+Footer:
+Include:
+- The Colour Stylist
+- Quick links
+- Services links
+- Contact details
+- Instagram placeholder link
+- Copyright
+
+Implementation details:
+- Use Next/Image for all images
+- Add page metadata / SEO titles for each page
+- Use semantic HTML
+- Make spacing elegant and consistent
+- Ensure all nav and CTA links work
+- Ensure mobile experience is excellent
+- Make testimonials data-driven
+- Make service cards reusable
+- Make CTA button styles consistent across all pages
+- Keep everything editable and tidy in the codebase
+
+Final polish:
+This should feel like a luxury personal brand website: soft, clean, premium, calm and highly usable. Improve the layout quality, typography, spacing and responsiveness beyond the original Wix version while preserving its structure and tone.

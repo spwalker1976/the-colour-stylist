@@ -1,0 +1,187 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-teal: hsl(var(--teal));
+  --color-teal-foreground: hsl(var(--teal-foreground));
+
+  --font-sans: var(--app-font-sans);
+  --font-serif: var(--app-font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+}
+
+:root {
+  /* Soft blush background */
+  --background: 350 30% 97%;
+  --foreground: 220 15% 25%;
+
+  --border: 350 20% 88%;
+  --input: 350 20% 88%;
+  --ring: 185 40% 35%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 25%;
+
+  /* Deep muted teal */
+  --primary: 185 42% 33%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 350 20% 93%;
+  --secondary-foreground: 220 15% 30%;
+
+  --muted: 350 20% 95%;
+  --muted-foreground: 220 10% 50%;
+
+  --accent: 350 25% 90%;
+  --accent-foreground: 220 15% 25%;
+
+  --teal: 185 42% 33%;
+  --teal-foreground: 0 0% 100%;
+
+  --app-font-sans: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --app-font-serif: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --radius: 0.25rem;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: var(--app-font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--app-font-serif);
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  h4, h5, h6 {
+    font-family: var(--app-font-sans);
+    font-weight: 500;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--app-font-serif);
+  }
+
+  .font-sans {
+    font-family: var(--app-font-sans);
+  }
+
+  .text-blush {
+    color: hsl(350, 40%, 75%);
+  }
+
+  .bg-blush {
+    background-color: hsl(var(--background));
+  }
+
+  .bg-teal {
+    background-color: hsl(var(--teal));
+  }
+
+  .text-teal {
+    color: hsl(var(--teal));
+  }
+
+  .bg-charcoal {
+    background-color: hsl(220, 15%, 22%);
+  }
+
+  .btn-teal {
+    display: inline-block;
+    background-color: hsl(var(--teal));
+    color: hsl(var(--teal-foreground));
+    padding: 0.75rem 1.75rem;
+    font-family: var(--app-font-sans);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid hsl(var(--teal));
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .btn-teal:hover {
+    background-color: hsl(185, 42%, 27%);
+  }
+
+  .btn-outline {
+    display: inline-block;
+    background-color: transparent;
+    color: hsl(var(--teal));
+    padding: 0.75rem 1.75rem;
+    font-family: var(--app-font-sans);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid hsl(var(--teal));
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+  }
+
+  .btn-outline:hover {
+    background-color: hsl(185, 42%, 33%);
+    color: white;
+  }
+
+  .section-label {
+    font-family: var(--app-font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: hsl(185, 42%, 33%);
+    font-weight: 500;
+  }
+
+  .divider-thin {
+    height: 1px;
+    background-color: hsl(var(--border));
+  }
+}

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "The Colour Stylist"
+version = "1.0.0"
+id = "artifacts/colour-stylist"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22186
+
+[services.development]
+run = "pnpm --filter @workspace/colour-stylist run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/colour-stylist", "run", "build" ]
+publicDir = "artifacts/colour-stylist/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22186"
+BASE_PATH = "/"
