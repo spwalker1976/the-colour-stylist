@@ -18,7 +18,7 @@ export default function ServiceCard({ title, description, href, imageSrc, large 
             alt={title}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent" />
           <div className="absolute inset-0 flex flex-col justify-end p-8">
             <h3
               className="font-serif text-white text-2xl font-medium mb-2"
