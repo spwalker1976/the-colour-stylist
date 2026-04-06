@@ -33,7 +33,6 @@ export default function PageHero({
           )}
           <h1
             className="font-serif text-white text-4xl lg:text-5xl font-medium leading-tight tracking-wide"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             {title}
           </h1>
@@ -49,7 +48,6 @@ export default function PageHero({
       )}
       <h1
         className="font-serif text-[hsl(220,15%,22%)] text-4xl lg:text-5xl font-medium leading-tight tracking-wide"
-        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {title}
       </h1>

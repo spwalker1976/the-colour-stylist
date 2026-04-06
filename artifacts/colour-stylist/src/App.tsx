@@ -1,4 +1,5 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
+import { useEffect } from "react";
+import { Switch, Route, Router as WouterRouter, useLocation } from "wouter";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Home from "@/pages/Home";
@@ -12,9 +13,18 @@ import ColourAnalysisWithFriends from "@/pages/services/ColourAnalysisWithFriend
 import WardrobeDeclutter from "@/pages/services/WardrobeDeclutter";
 import NotFound from "@/pages/not-found";
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [location]);
+  return null;
+}
+
 function Router() {
   return (
     <div className="flex flex-col min-h-screen">
+      <ScrollToTop />
       <Header />
       <div className="flex-1">
         <Switch>

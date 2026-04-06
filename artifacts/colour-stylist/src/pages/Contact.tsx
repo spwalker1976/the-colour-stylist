@@ -9,7 +9,6 @@ export default function Contact() {
           <p className="section-label mb-4">Get in Touch</p>
           <h1
             className="font-serif text-[hsl(220,15%,22%)] text-4xl lg:text-5xl font-medium tracking-wide"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Contact
           </h1>

@@ -16,7 +16,6 @@ export default function ContactStrip({
       <div className="max-w-7xl mx-auto px-6 lg:px-12 text-center">
         <h2
           className="font-serif text-white text-3xl lg:text-4xl font-medium mb-4 tracking-wide"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           {heading}
         </h2>

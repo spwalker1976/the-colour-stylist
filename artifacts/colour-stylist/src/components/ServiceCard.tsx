@@ -22,7 +22,6 @@ export default function ServiceCard({ title, description, href, imageSrc, large 
           <div className="absolute inset-0 flex flex-col justify-end p-8">
             <h3
               className="font-serif text-white text-2xl font-medium mb-2"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               {title}
             </h3>
@@ -43,7 +42,6 @@ export default function ServiceCard({ title, description, href, imageSrc, large 
     <div className="group bg-white/90 backdrop-blur-sm border border-white/60 p-8 flex flex-col">
       <h3
         className="font-serif text-[hsl(220,15%,22%)] text-xl font-medium mb-3 tracking-wide"
-        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {title}
       </h3>

@@ -25,7 +25,7 @@ export default function ColourAnalysisWithFriends() {
       {/* Hero */}
       <div className="relative h-[52vh] min-h-[340px] max-h-[500px] overflow-hidden">
         <img
-          src="/images/colour-analysis-with-friends.jpg"
+          src="/images/service-friends.jpg"
           alt="Colour analysis with friends session"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center" }}
@@ -35,7 +35,6 @@ export default function ColourAnalysisWithFriends() {
           <p className="text-[10px] tracking-[0.22em] uppercase text-white/60 mb-3">Services</p>
           <h1
             className="font-serif text-white text-4xl lg:text-5xl font-medium leading-tight tracking-wide"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Colour Analysis with Friends
           </h1>
@@ -46,7 +45,7 @@ export default function ColourAnalysisWithFriends() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-2xl">
-            <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic">
               A relaxed, personalised colour analysis experience to enjoy with friends. Discover the colours that make you glow — together.
             </p>
             <p className="text-[hsl(220,15%,45%)] text-base leading-relaxed">
@@ -64,7 +63,6 @@ export default function ColourAnalysisWithFriends() {
               <p className="section-label mb-4">What each guest receives</p>
               <h2
                 className="font-serif text-[hsl(220,15%,22%)] text-2xl lg:text-3xl font-medium mb-8 tracking-wide"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Your personalised results include:
               </h2>
@@ -79,7 +77,7 @@ export default function ColourAnalysisWithFriends() {
             </div>
             <div className="relative overflow-hidden" style={{ paddingTop: "100%" }}>
               <img
-                src="/images/colour-analysis-with-friends.jpg"
+                src="/images/service-friends.jpg"
                 alt="Friends enjoying colour analysis"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -95,7 +93,6 @@ export default function ColourAnalysisWithFriends() {
             <p className="section-label mb-4">The Experience</p>
             <h2
               className="font-serif text-[hsl(220,15%,22%)] text-2xl lg:text-3xl font-medium mb-8 tracking-wide"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Why book with friends?
             </h2>
@@ -107,7 +104,7 @@ export default function ColourAnalysisWithFriends() {
                 </li>
               ))}
             </ul>
-            <p className="text-[hsl(220,15%,50%)] text-sm italic leading-relaxed border-l-2 border-[hsl(185,42%,33%)] pl-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p className="text-[hsl(220,15%,50%)] text-sm italic leading-relaxed border-l-2 border-[hsl(185,42%,33%)] pl-4">
               Group sessions are hosted in Marlow, with travel available by arrangement.
             </p>
           </div>

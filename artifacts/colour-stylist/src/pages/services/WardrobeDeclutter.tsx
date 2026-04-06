@@ -17,7 +17,7 @@ export default function WardrobeDeclutter() {
       {/* Hero */}
       <div className="relative h-[52vh] min-h-[340px] max-h-[500px] overflow-hidden">
         <img
-          src="/images/wardrobe-declutter.jpg"
+          src="/images/service-wardrobe.jpg"
           alt="Wardrobe declutter session"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center" }}
@@ -27,7 +27,6 @@ export default function WardrobeDeclutter() {
           <p className="text-[10px] tracking-[0.22em] uppercase text-white/60 mb-3">Services</p>
           <h1
             className="font-serif text-white text-4xl lg:text-5xl font-medium leading-tight tracking-wide"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             Wardrobe Declutter
           </h1>
@@ -38,7 +37,7 @@ export default function WardrobeDeclutter() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-2xl">
-            <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic">
               The first step to creating a well-curated capsule wardrobe is a thoughtful declutter.
             </p>
             <p className="text-[hsl(220,15%,45%)] text-base leading-relaxed">
@@ -56,7 +55,6 @@ export default function WardrobeDeclutter() {
               <p className="section-label mb-4">The Session</p>
               <h2
                 className="font-serif text-[hsl(220,15%,22%)] text-2xl lg:text-3xl font-medium mb-8 tracking-wide"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 During your session, we will:
               </h2>
@@ -88,7 +86,7 @@ export default function WardrobeDeclutter() {
             </div>
             <div className="relative overflow-hidden" style={{ paddingTop: "115%" }}>
               <img
-                src="/images/wardrobe-declutter.jpg"
+                src="/images/service-wardrobe.jpg"
                 alt="Wardrobe organisation"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -101,7 +99,7 @@ export default function WardrobeDeclutter() {
       <section className="py-14 bg-white">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <div className="divider-thin mb-10" />
-          <p className="text-[hsl(220,15%,50%)] text-sm leading-relaxed italic" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+          <p className="text-[hsl(220,15%,50%)] text-sm leading-relaxed italic">
             This session focuses on editing and styling your existing wardrobe. For a full colour analysis, please see the colour analysis services. For best results, many clients choose to have a colour analysis before their wardrobe declutter.
           </p>
           <div className="divider-thin mt-10" />

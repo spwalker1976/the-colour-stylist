@@ -27,7 +27,7 @@ export default function ColourAnalysisInPerson() {
       {/* Hero */}
       <div className="relative h-[52vh] min-h-[340px] max-h-[500px] overflow-hidden">
         <img
-          src="/images/in-person-colour-analysis.jpg"
+          src="/images/service-in-person.jpg"
           alt="In person colour analysis session"
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: "center" }}
@@ -37,7 +37,6 @@ export default function ColourAnalysisInPerson() {
           <p className="text-[10px] tracking-[0.22em] uppercase text-white/60 mb-3">Services</p>
           <h1
             className="font-serif text-white text-4xl lg:text-5xl font-medium leading-tight tracking-wide"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
           >
             In Person Colour Analysis
           </h1>
@@ -48,7 +47,7 @@ export default function ColourAnalysisInPerson() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-2xl">
-            <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic">
               A personalised one-to-one colour analysis session in my Marlow studio. Discover the colours that make you glow.
             </p>
             <p className="text-[hsl(220,15%,45%)] text-base leading-relaxed">
@@ -66,7 +65,6 @@ export default function ColourAnalysisInPerson() {
               <p className="section-label mb-4">What you receive</p>
               <h2
                 className="font-serif text-[hsl(220,15%,22%)] text-2xl lg:text-3xl font-medium mb-8 tracking-wide"
-                style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
               >
                 Your personalised results include:
               </h2>
@@ -81,7 +79,7 @@ export default function ColourAnalysisInPerson() {
             </div>
             <div className="relative overflow-hidden" style={{ paddingTop: "100%" }}>
               <img
-                src="/images/in-person-colour-analysis.jpg"
+                src="/images/service-in-person.jpg"
                 alt="Colour analysis drapes"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -97,7 +95,6 @@ export default function ColourAnalysisInPerson() {
             <p className="section-label mb-4">The Impact</p>
             <h2
               className="font-serif text-[hsl(220,15%,22%)] text-2xl lg:text-3xl font-medium mb-8 tracking-wide"
-              style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
             >
               Why have a colour analysis?
             </h2>
@@ -110,7 +107,7 @@ export default function ColourAnalysisInPerson() {
                 </li>
               ))}
             </ul>
-            <p className="text-[hsl(220,15%,50%)] text-sm italic leading-relaxed border-l-2 border-[hsl(185,42%,33%)] pl-4" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            <p className="text-[hsl(220,15%,50%)] text-sm italic leading-relaxed border-l-2 border-[hsl(185,42%,33%)] pl-4">
               In-person colour analysis sessions take place at my home in Marlow, with travel available by arrangement.
             </p>
           </div>

@@ -1,0 +1,323 @@
+Refine and fix the existing website. Do not rebuild from scratch. Keep the current overall design, colours, imagery and page structure, but correct the navigation, scroll behaviour, typography, content and image usage issues below.
+
+CRITICAL RULES:
+- Do not redesign the whole site
+- Do not remove sections unless explicitly requested below
+- Do not shorten content
+- Do not change the overall premium feminine brand feel
+- Only refine, correct and improve the current build
+- All images must be stored in /public/images/ and referenced in code using /images/
+- Ensure all links and buttons land at the true top of the target page or section, not halfway down
+
+==================================================
+IMAGE FILE NAMING AND USAGE
+==================================================
+
+All image files will be uploaded into:
+
+public/images/
+
+Use these EXACT file names and code paths:
+
+1. Logo
+File name:
+public/images/logo-primary.png
+Use in code as:
+/images/logo-primary.png
+
+2. Homepage hero image
+File name:
+public/images/home-hero.jpg
+Use in code as:
+/images/home-hero.jpg
+
+3. About image
+File name:
+public/images/about-clare.jpg
+Use in code as:
+/images/about-clare.jpg
+
+4. What Is Colour Analysis image
+File name:
+public/images/what-is-colour-analysis.jpg
+Use in code as:
+/images/what-is-colour-analysis.jpg
+
+5. In Person Colour Analysis image
+File name:
+public/images/service-in-person.jpg
+Use in code as:
+/images/service-in-person.jpg
+
+6. Colour Analysis with Friends image
+File name:
+public/images/service-friends.jpg
+Use in code as:
+/images/service-friends.jpg
+
+This must replace the current Colour Analysis with Friends image everywhere it appears.
+
+7. Wardrobe Declutter image
+File name:
+public/images/service-wardrobe.jpg
+Use in code as:
+/images/service-wardrobe.jpg
+
+8. Optional general/background image if needed
+File name:
+public/images/colours-background.jpg
+Use in code as:
+/images/colours-background.jpg
+
+IMAGE REQUIREMENTS:
+- Scale correctly on mobile and desktop
+- Do not stretch or distort images
+- Avoid awkward cropping
+- Optimise image loading
+- Keep image presentation elegant and premium
+
+==================================================
+1. FIX ALL NAVIGATION AND SCROLL BEHAVIOUR
+==================================================
+
+There are multiple navigation and scroll position issues that must be fixed properly.
+
+A. Footer / bottom navigation issue
+The navigation links at the bottom of the site do not work properly.
+Most of them keep the user within that same footer/navigation area instead of taking them to the correct page or section.
+Only the About link currently seems to behave correctly.
+Fix this so every footer link goes to the correct destination and lands at the correct top position.
+
+B. Mobile menu issue for service pages
+On mobile, when selecting a service from the menu, it jumps too low on the destination page.
+It should land at the actual top of that dedicated service page, not part-way down.
+
+Fix this for:
+- Colour Analysis in Person
+- Colour Analysis with Friends
+- Wardrobe Declutter
+
+C. Learn More button issue on Wardrobe Declutter
+The Wardrobe Declutter Learn More button currently jumps too far down the page.
+Fix it so it lands at the true top of the Wardrobe Declutter page.
+
+D. View Contact Page issue
+When clicking View Contact Page, it currently lands near the bottom of the Contact page.
+Fix it so it always lands at the top of the Contact page.
+
+E. General routing and scroll behaviour
+Review all internal links, buttons, menu items and footer links.
+Make sure:
+- they go to the intended page or section
+- they land at the top, not mid-page
+- sticky header offset is handled correctly
+- there are no broken hash links
+- there are no scroll restoration issues
+- there are no invisible overlays blocking clicks
+
+If a sticky header exists, make sure linked sections are offset properly so headings are not hidden under the header.
+
+==================================================
+2. HEADER AND LOGO
+==================================================
+
+Replace the current text logo with an uploaded image logo.
+
+Use:
+- file: public/images/logo-primary.png
+- code path: /images/logo-primary.png
+
+Requirements:
+- Replace the text logo completely
+- Do not show text logo and image logo together
+- Logo must link to the homepage
+- Keep logo crisp and proportional
+- Do not distort the logo
+- Target size:
+  - desktop max height around 50–60px
+  - mobile max height around 36–40px
+- Keep header balanced and premium
+- Maintain clean spacing between:
+  - logo
+  - homepage CTA / WhatsApp button
+  - hamburger/menu icon
+
+==================================================
+3. HOMEPAGE FIXES
+==================================================
+
+A. Update homepage body text to exactly:
+
+Professional colour analysis in Marlow. Colour clarity for effortless style.
+
+B. Homepage buttons
+There are two homepage buttons:
+- Explore Services
+- WhatsApp / Get in Touch
+
+Update them so:
+- both buttons are the same overall size
+- both align neatly
+- button text size remains the same in both
+- spacing is consistent
+- the WhatsApp button is about 50% smaller than it is now, so it no longer looks oversized
+- final result should feel balanced and premium
+
+C. Homepage logo
+Use the uploaded logo image as specified above.
+
+==================================================
+4. ABOUT PAGE FIX
+==================================================
+
+Update the About page so it matches the full intended version and does not feel shortened.
+
+TITLE:
+ABOUT ME
+
+CONTENT:
+
+Hi, I'm Clare
+
+A certified colour and image consultant based in Marlow. With 15 years' experience as a fashion buyer, I bring a practical, real-world approach to colour and style.
+
+I offer one-to-one and small group personalised colour analysis sessions, designed to help you discover the colours that make you glow and feel confident in what you wear.
+
+I work with women at all stages of life, often at a point of change — whether that's midlife, a new chapter, or a desire to feel more like yourself again.
+
+My approach is relaxed, considered and personal, creating a space where you can feel at ease while discovering what truly suits you.
+
+QUOTE AT BOTTOM:
+“Discovering my colour season was a turning point for my confidence and personal style — and I want every client to experience that moment.”
+
+Requirements:
+- Remove any extra button from this About page/section
+- Keep the layout elegant
+- Ensure the homepage About link goes correctly to this full About page/section
+- Use the About image:
+  - file: public/images/about-clare.jpg
+  - code path: /images/about-clare.jpg
+
+==================================================
+5. WHAT IS COLOUR ANALYSIS SECTION
+==================================================
+
+Fix this section/page as follows:
+- Keep using this exact image:
+  - file: public/images/what-is-colour-analysis.jpg
+  - code path: /images/what-is-colour-analysis.jpg
+- Move the title “WHAT IS COLOUR ANALYSIS?” above the image
+- Remove the Learn More button completely
+- Keep the section elegant and balanced on desktop and mobile
+
+==================================================
+6. SERVICES SECTION FIXES
+==================================================
+
+A. Remove the text:
+“What I offer”
+
+B. Ensure all Learn More buttons go to the true top of the correct dedicated service page.
+
+C. Image assignments for service pages/cards:
+- In Person Colour Analysis uses:
+  file: public/images/service-in-person.jpg
+  code path: /images/service-in-person.jpg
+
+- Colour Analysis with Friends uses:
+  file: public/images/service-friends.jpg
+  code path: /images/service-friends.jpg
+
+- Wardrobe Declutter uses:
+  file: public/images/service-wardrobe.jpg
+  code path: /images/service-wardrobe.jpg
+
+D. The Colour Analysis with Friends image must be replaced with the new file above everywhere that service image appears.
+
+==================================================
+7. TESTIMONIALS SECTION FIXES
+==================================================
+
+Remove the text:
+“Kind words”
+
+Keep the testimonials section otherwise intact, with a clean elegant coloured background and good spacing.
+
+==================================================
+8. INSTAGRAM LINK UPDATE
+==================================================
+
+Update the Instagram profile link everywhere on the site to:
+
+https://www.instagram.com/the.colour.stylist/
+
+If text is shown, use:
+@the.colour.stylist
+
+==================================================
+9. TYPOGRAPHY
+==================================================
+
+A. Replace the serif font with a clean, elegant premium sans serif font across the site.
+
+B. Keep the site feeling refined, feminine and modern.
+
+C. All titles/headings must be capitalised consistently across the site.
+
+This includes page titles, section titles and service titles.
+
+==================================================
+10. CONTACT PAGE / CONTACT LINK BEHAVIOUR
+==================================================
+
+Ensure all Contact-related links behave correctly:
+- View Contact Page must land at top of page
+- Contact page should not open halfway down
+- Maintain existing contact details and layout unless needed for correction
+- Keep the page polished and easy to use
+
+==================================================
+11. MOBILE HEADER AND SPACING POLISH
+==================================================
+
+Review the mobile header carefully and improve it without redesigning:
+- Logo fits cleanly
+- WhatsApp/Get in Touch button does not dominate the header
+- Hamburger icon aligns properly
+- Spacing feels premium and balanced
+- No cramped layout
+- No overlapping elements
+
+==================================================
+12. FINAL QA CHECK - MANDATORY
+==================================================
+
+After making changes, verify all of the following:
+
+- Footer navigation links all work correctly
+- Mobile menu links land at the correct top position
+- All service links open at the top of the page
+- Wardrobe Declutter Learn More lands at the top
+- View Contact Page lands at the top of Contact
+- About page matches the full intended version
+- About page includes the updated quote
+- Homepage body text is updated correctly
+- Homepage buttons are the same size and aligned properly
+- WhatsApp button is reduced from its current oversized state
+- Logo loads from /images/logo-primary.png
+- What Is Colour Analysis image loads from /images/what-is-colour-analysis.jpg
+- Colour Analysis with Friends image loads from /images/service-friends.jpg
+- In Person service image loads from /images/service-in-person.jpg
+- Wardrobe image loads from /images/service-wardrobe.jpg
+- Instagram link is correct
+- Serif font is fully removed
+- All titles are capitalised consistently
+- “What I offer” is removed
+- “Kind words” is removed
+- No broken links
+- No scroll-to-middle bugs
+- No hidden heading issues under sticky header
+
+Implement these refinements directly in the current build.
+Do not rebuild the site from scratch.
+Do not redesign unnecessarily.

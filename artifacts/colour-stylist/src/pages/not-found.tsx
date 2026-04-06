@@ -7,7 +7,6 @@ export default function NotFound() {
         <p className="section-label mb-4">404</p>
         <h1
           className="font-serif text-[hsl(220,15%,22%)] text-4xl font-medium mb-4 tracking-wide"
-          style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
         >
           Page not found
         </h1>

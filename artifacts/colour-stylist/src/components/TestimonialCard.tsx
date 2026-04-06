@@ -25,7 +25,6 @@ export default function TestimonialCard({ name, quote, light = false }: Testimon
         className={`text-sm leading-relaxed flex-1 mb-6 italic ${
           light ? "text-[hsl(220,15%,40%)]" : "text-white/80"
         }`}
-        style={{ fontFamily: "'Playfair Display', Georgia, serif" }}
       >
         {quote}
       </p>
