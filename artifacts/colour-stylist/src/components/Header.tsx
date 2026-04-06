@@ -57,15 +57,15 @@ export default function Header() {
       style={{ boxShadow: "0 1px 12px rgba(0,0,0,0.05)" }}
     >
       <div className="max-w-7xl mx-auto px-5 lg:px-12">
-        <div className="flex items-center justify-between h-[72px]">
+        <div className="flex items-center justify-between h-[88px] lg:h-[96px]">
 
-          {/* Logo image — larger, proportionate */}
+          {/* Logo image */}
           <Link href="/" className="shrink-0 no-underline" aria-label="The Colour Stylist — Home">
             <img
               src="/images/logo-primary.png"
               alt="The Colour Stylist"
-              className="h-12 lg:h-14 w-auto object-contain"
-              style={{ maxWidth: "260px" }}
+              className="h-[4.5rem] lg:h-[5.5rem] w-auto object-contain"
+              style={{ maxWidth: "300px" }}
             />
           </Link>
 
