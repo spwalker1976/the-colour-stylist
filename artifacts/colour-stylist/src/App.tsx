@@ -11,6 +11,7 @@ import Contact from "@/pages/Contact";
 import ColourAnalysisInPerson from "@/pages/services/ColourAnalysisInPerson";
 import ColourAnalysisWithFriends from "@/pages/services/ColourAnalysisWithFriends";
 import WardrobeDeclutter from "@/pages/services/WardrobeDeclutter";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import NotFound from "@/pages/not-found";
 
 function ScrollToTop() {
@@ -37,6 +38,7 @@ function Router() {
           <Route path="/what-is-colour-analysis" component={WhatIsColourAnalysis} />
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/contact" component={Contact} />
+          <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route component={NotFound} />
         </Switch>
       </div>

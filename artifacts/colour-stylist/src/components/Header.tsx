@@ -16,8 +16,8 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ];
 
-const WhatsAppIcon = () => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+const WhatsAppIcon = ({ size = 13 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.848L0 24l6.335-1.524A11.935 11.935 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.875 0-3.635-.5-5.157-1.372l-.371-.22-3.824.92.955-3.727-.236-.38A9.94 9.94 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
   </svg>
@@ -56,16 +56,16 @@ export default function Header() {
       className="sticky top-0 z-50 bg-white border-b border-[hsl(350,20%,88%)]"
       style={{ boxShadow: "0 1px 12px rgba(0,0,0,0.05)" }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-5 lg:px-12">
         <div className="flex items-center justify-between h-[72px]">
 
-          {/* Logo image */}
+          {/* Logo image — larger, proportionate */}
           <Link href="/" className="shrink-0 no-underline" aria-label="The Colour Stylist — Home">
             <img
               src="/images/logo-primary.png"
               alt="The Colour Stylist"
-              className="h-10 lg:h-12 w-auto object-contain"
-              style={{ maxWidth: "240px" }}
+              className="h-12 lg:h-14 w-auto object-contain"
+              style={{ maxWidth: "260px" }}
             />
           </Link>
 
@@ -86,11 +86,7 @@ export default function Header() {
               >
                 Services
                 <svg
-                  width="9"
-                  height="5"
-                  viewBox="0 0 10 6"
-                  fill="none"
-                  aria-hidden="true"
+                  width="9" height="5" viewBox="0 0 10 6" fill="none" aria-hidden="true"
                   className={`mt-px opacity-50 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
                 >
                   <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -135,33 +131,47 @@ export default function Header() {
           </nav>
 
           {/* Desktop WhatsApp CTA */}
-          <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden lg:inline-flex items-center gap-2 btn-teal text-xs shrink-0"
-          >
-            <WhatsAppIcon />
-            Get in touch
-          </a>
+          <div className="hidden lg:flex shrink-0">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-teal text-xs flex items-center gap-2"
+            >
+              <WhatsAppIcon />
+              Get in touch
+            </a>
+          </div>
 
-          {/* Mobile Hamburger */}
-          <button
-            className="lg:hidden p-2 -mr-1 text-[hsl(220,15%,35%)] hover:text-[hsl(185,42%,33%)] transition-colors"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            aria-expanded={mobileOpen}
-          >
-            {mobileOpen ? (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-                <path d="M6 18L18 6M6 6l12 12"/>
-              </svg>
-            ) : (
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
-                <path d="M3 7h18M3 12h18M3 17h18"/>
-              </svg>
-            )}
-          </button>
+          {/* Mobile: WhatsApp icon + Hamburger */}
+          <div className="lg:hidden flex items-center gap-1">
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact via WhatsApp"
+              className="flex items-center gap-1.5 px-3 py-2 rounded text-[hsl(185,42%,33%)] hover:bg-[hsl(185,42%,33%)]/8 transition-colors text-[0.7rem] tracking-[0.06em] uppercase font-medium"
+            >
+              <WhatsAppIcon size={17} />
+              <span className="hidden xs:inline">WhatsApp</span>
+            </a>
+            <button
+              className="p-2 text-[hsl(220,15%,35%)] hover:text-[hsl(185,42%,33%)] transition-colors"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label={mobileOpen ? "Close menu" : "Open menu"}
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? (
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                  <path d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+              ) : (
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                  <path d="M3 7h18M3 12h18M3 17h18"/>
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}

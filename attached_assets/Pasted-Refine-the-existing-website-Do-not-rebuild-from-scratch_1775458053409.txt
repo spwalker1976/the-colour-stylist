@@ -1,0 +1,157 @@
+Refine the existing website. Do not rebuild from scratch. Keep the current design and layout, but apply the following final corrections and additions.
+
+CRITICAL RULES:
+- Do not redesign the whole site
+- Do not change the premium feminine aesthetic
+- Only refine the current implementation
+- Keep all current imagery and structure unless explicitly stated
+- All images remain in /public/images/ and referenced as /images/filename
+
+==================================================
+1. HEADER / TOP BAR FINAL POLISH
+==================================================
+
+A. Logo sizing
+The logo is currently too small.
+
+Update:
+- Increase the visible size of the logo so it is clearly readable and visually balanced with the header
+- It should feel premium and proportionate to the navigation and CTA
+- Do NOT stretch or distort it
+- Maintain aspect ratio
+
+Logo file:
+public/images/logo-primary.png  
+Code path:
+/images/logo-primary.png
+
+B. Mobile hamburger icon
+The hamburger menu icon is too small.
+
+Update:
+- Increase its size by approximately 25–30%
+- Keep spacing clean and aligned
+- Ensure it still feels minimal and premium
+
+C. Mobile header alignment
+The header layout needs rebalancing:
+
+- Logo should sit cleanly on the left
+- WhatsApp / Get In Touch button should feel visually centred within the header composition
+- Hamburger icon aligned neatly on the right
+- Spacing should feel intentional and not cramped
+- Avoid oversized header height
+
+==================================================
+2. PRIVACY POLICY PAGE (UK COMPLIANT)
+==================================================
+
+Create a new page:
+- /privacy-policy
+
+Add link:
+- Footer navigation → "Privacy Policy"
+
+Business details to use:
+- Business name: The Colour Stylist Ltd
+- Location: Marlow, Buckinghamshire, UK
+- Email: clare@thecolourstylist.com
+
+Create a clear, professional UK privacy policy suitable for:
+- a brochure-style website
+- contact via WhatsApp, email and Instagram
+- no ecommerce or login system
+
+Include the following sections:
+
+1. Who we are  
+Identify The Colour Stylist Ltd as the data controller.
+
+2. What data we collect  
+- Name (if provided)
+- Email address
+- Phone / WhatsApp number
+- Any information shared via enquiry
+
+3. How we use data  
+- Respond to enquiries  
+- Provide services  
+- Improve customer experience  
+
+4. Lawful basis (UK GDPR)  
+- Legitimate interest  
+- Consent (where applicable)
+
+5. Contact channels  
+Explain use of:
+- Email  
+- WhatsApp  
+- Instagram  
+
+6. Cookies / analytics  
+Keep simple:
+- State if minimal or basic analytics are used  
+- No intrusive tracking
+
+7. Data retention  
+- Only kept as long as necessary
+
+8. Data sharing  
+- No selling of data  
+- Only shared if required for service delivery
+
+9. International transfers  
+- Keep simple unless applicable
+
+10. Your rights  
+Include:
+- Access  
+- Rectification  
+- Erasure  
+- Restriction  
+- Objection  
+
+11. ICO reference  
+Include:
+"You have the right to lodge a complaint with the Information Commissioner’s Office (ICO) in the UK."
+
+12. Contact  
+Use:
+clare@thecolourstylist.com
+
+13. Updates  
+Include a “Last updated” date at top of page
+
+STYLE:
+- Keep language clear, simple, and professional
+- Avoid overly legal or corporate tone
+- Match site typography and spacing
+
+==================================================
+3. PRIVACY PAGE DESIGN
+==================================================
+
+Ensure:
+- Same fonts, colours, spacing as rest of site
+- Clean readable layout
+- Proper heading hierarchy
+- Not overly wide text blocks
+- Feels on-brand, not like a generic legal dump
+
+==================================================
+4. FINAL QA CHECK
+==================================================
+
+After changes confirm:
+
+- Logo is larger and visually balanced
+- Logo is not distorted
+- Hamburger icon is ~25–30% bigger
+- Header layout feels clean and premium on mobile
+- WhatsApp button positioning looks correct
+- Privacy Policy page works at /privacy-policy
+- Footer link works
+- No existing navigation is broken
+
+Implement changes directly in current project.
+Do NOT rebuild.

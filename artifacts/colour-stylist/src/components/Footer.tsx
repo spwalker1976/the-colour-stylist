@@ -110,11 +110,14 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/35 tracking-wide">
-            &copy; {new Date().getFullYear()} The Colour Stylist. All rights reserved.
+            &copy; {new Date().getFullYear()} The Colour Stylist Ltd. All rights reserved.
           </p>
-          <p className="text-xs text-white/25">
-            Marlow, Buckinghamshire, UK
-          </p>
+          <div className="flex items-center gap-5">
+            <Link href="/privacy-policy" className="text-xs text-white/30 hover:text-white/60 transition-colors no-underline">
+              Privacy Policy
+            </Link>
+            <span className="text-xs text-white/20">Marlow, Buckinghamshire, UK</span>
+          </div>
         </div>
       </div>
     </footer>
