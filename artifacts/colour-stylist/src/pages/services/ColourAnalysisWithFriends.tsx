@@ -56,7 +56,7 @@ export default function ColourAnalysisWithFriends() {
                 <circle cx="12" cy="12" r="10"/>
                 <path d="M12 6v6l4 2"/>
               </svg>
-              <span><strong className="text-[hsl(220,15%,30%)]">Investment:</strong> £130 per person</span>
+              <span><strong className="text-[hsl(220,15%,30%)]">Price:</strong> £130 per person</span>
             </div>
             <div className="bg-[hsl(350,30%,97%)] border border-[hsl(350,20%,88%)] px-6 py-5 space-y-2">
               <p className="text-[hsl(220,15%,40%)] text-sm leading-relaxed">Perfect for birthdays, hen parties or a stylish shared experience.</p>

@@ -73,7 +73,7 @@ export default function WardrobeDeclutter() {
                     <circle cx="12" cy="12" r="10"/>
                     <path d="M12 6v6l4 2"/>
                   </svg>
-                  <span><strong className="text-[hsl(220,15%,30%)]">Investment:</strong> £150 for 2 hours</span>
+                  <span><strong className="text-[hsl(220,15%,30%)]">Price:</strong> £150 for 2 hours</span>
                 </div>
                 <div className="flex items-center gap-3 text-sm text-[hsl(220,15%,45%)]">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-[hsl(185,42%,33%)] flex-shrink-0">

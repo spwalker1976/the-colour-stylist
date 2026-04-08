@@ -58,7 +58,7 @@ export default function ColourAnalysisInPerson() {
                 <circle cx="12" cy="12" r="10"/>
                 <path d="M12 6v6l4 2"/>
               </svg>
-              <span><strong className="text-[hsl(220,15%,30%)]">Investment:</strong> £150</span>
+              <span><strong className="text-[hsl(220,15%,30%)]">Price:</strong> £150</span>
             </div>
           </div>
         </div>
