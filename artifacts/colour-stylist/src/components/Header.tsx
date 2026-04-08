@@ -64,7 +64,7 @@ export default function Header() {
             <img
               src="/images/logo-primary.png"
               alt="The Colour Stylist"
-              className="h-[2.75rem] lg:h-[9rem] w-auto object-contain"
+              className="h-[3.5rem] lg:h-[9rem] w-auto object-contain"
               style={{ maxWidth: "380px" }}
             />
           </Link>

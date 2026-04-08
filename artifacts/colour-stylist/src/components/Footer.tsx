@@ -14,7 +14,7 @@ export default function Footer() {
               <img
                 src="/images/logo-primary.png"
                 alt="The Colour Stylist"
-                className="h-8 w-auto object-contain opacity-80"
+                className="h-20 w-auto object-contain opacity-80"
                 style={{ filter: "brightness(0) invert(1)" }}
               />
             </div>
