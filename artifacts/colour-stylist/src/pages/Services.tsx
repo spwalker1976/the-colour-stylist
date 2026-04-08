@@ -7,18 +7,21 @@ const services = [
     description: "A personalised one-to-one colour analysis session using the 12 season system to identify the shades that naturally enhance your features. Discover your palette, your WOW colours and the guidance to shop with confidence.",
     href: "/services/colour-analysis-in-person",
     imageSrc: "/images/service-in-person.jpg",
+    price: "£150",
   },
   {
     title: "Colour Analysis with Friends",
     description: "A relaxed and enjoyable session with friends or family, where you'll each discover the colours that make you glow. A beautiful, memorable experience to share.",
     href: "/services/colour-analysis-with-friends",
     imageSrc: "/images/service-friends.jpg",
+    price: "£130 per person",
   },
   {
     title: "Wardrobe Declutter",
     description: "A practical styling session to edit, refine and create a wardrobe that works for your life and personal style. Leave feeling lighter, clearer and more confident.",
     href: "/services/wardrobe-declutter",
     imageSrc: "/images/service-wardrobe.jpg",
+    price: "£150 for 2 hours",
   },
 ];
 

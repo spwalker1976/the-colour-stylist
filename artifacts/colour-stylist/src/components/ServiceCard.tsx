@@ -6,9 +6,10 @@ interface ServiceCardProps {
   href: string;
   imageSrc?: string;
   large?: boolean;
+  price?: string;
 }
 
-export default function ServiceCard({ title, description, href, imageSrc, large = false }: ServiceCardProps) {
+export default function ServiceCard({ title, description, href, imageSrc, large = false, price }: ServiceCardProps) {
   if (large && imageSrc) {
     return (
       <Link href={href} className="group block no-underline overflow-hidden relative">
@@ -20,6 +21,9 @@ export default function ServiceCard({ title, description, href, imageSrc, large 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent" />
           <div className="absolute inset-0 flex flex-col justify-end p-8">
+            {price && (
+              <p className="text-white/65 text-xs tracking-[0.14em] uppercase mb-2">{price}</p>
+            )}
             <h3
               className="font-serif text-white text-2xl font-medium mb-2"
             >

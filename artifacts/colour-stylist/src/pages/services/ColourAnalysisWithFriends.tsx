@@ -48,9 +48,21 @@ export default function ColourAnalysisWithFriends() {
             <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic">
               A relaxed, personalised colour analysis experience to enjoy with friends. Discover the colours that make you glow — together.
             </p>
-            <p className="text-[hsl(220,15%,45%)] text-base leading-relaxed">
+            <p className="text-[hsl(220,15%,45%)] text-base leading-relaxed mb-6">
               Over the course of your session, I assess each person's undertone, contrast level and chroma to determine which of the twelve seasonal colour palettes enhances their natural colouring most beautifully, using professional drapes and seasonal flags.
             </p>
+            <div className="flex items-center gap-3 text-sm text-[hsl(220,15%,45%)] mb-8">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-[hsl(185,42%,33%)] flex-shrink-0">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <span><strong className="text-[hsl(220,15%,30%)]">Investment:</strong> £130 per person</span>
+            </div>
+            <div className="bg-[hsl(350,30%,97%)] border border-[hsl(350,20%,88%)] px-6 py-5 space-y-2">
+              <p className="text-[hsl(220,15%,40%)] text-sm leading-relaxed">Perfect for birthdays, hen parties or a stylish shared experience.</p>
+              <p className="text-[hsl(220,15%,40%)] text-sm leading-relaxed">Complimentary refreshments provided.</p>
+              <p className="text-[hsl(220,15%,40%)] text-sm leading-relaxed">For multiple friends or larger groups, such as hen parties, please contact for discounted pricing and packages.</p>
+            </div>
           </div>
         </div>
       </section>
