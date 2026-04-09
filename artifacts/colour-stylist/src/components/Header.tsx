@@ -13,6 +13,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "What is Colour Analysis", href: "/what-is-colour-analysis" },
   { label: "Testimonials", href: "/testimonials" },
+  { label: "Offers", href: "/pub-in-the-park-marlow" },
   { label: "Contact", href: "/contact" },
 ];
 
