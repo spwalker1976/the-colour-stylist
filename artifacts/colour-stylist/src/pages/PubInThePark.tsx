@@ -18,7 +18,7 @@ export default function PubInThePark() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative min-h-[52vh] md:min-h-[70vh] flex items-end bg-[hsl(220,15%,22%)] overflow-hidden">
+      <section className="relative h-[50vh] md:h-auto md:min-h-[70vh] flex items-end bg-[hsl(220,15%,22%)] overflow-hidden">
         <img
           src="/images/pub-in-the-park-marlow-colour-analysis.jpg"
           alt="Clare at Pub in the Park Marlow doing colour analysis"
