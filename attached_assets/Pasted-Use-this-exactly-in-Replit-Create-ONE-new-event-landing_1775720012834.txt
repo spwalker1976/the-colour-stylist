@@ -1,0 +1,77 @@
+Use this exactly in Replit:
+
+Create ONE new event landing page only.
+
+STRICT GUARDRAILS:
+- Only create the minimum files needed for this one new page
+- Do NOT modify any existing pages, components, styles, layout, navigation, or global structure
+- Do NOT refactor or restructure any existing code
+- Do NOT edit unrelated files
+- Do NOT modify any config, build, routing, deployment, package, or environment files
+- Do NOT touch vite.config.ts, vercel.json, package.json, tsconfig.json, or any Vercel-related setup
+- Do NOT install anything or change dependencies
+
+TASK:
+Create a new landing page for Clare’s event offer.
+
+URL / slug:
+"/pub-in-the-park-marlow"
+
+PAGE CONTENT:
+
+Main title:
+Colour Analysis at Pub in the Park Marlow
+
+Secondary title / hero line:
+Discover the colours that make you glow
+
+Hero image:
+Use this exact image reference:
+"/public/images/pub-in-the-park-marlow-colour-analysis.jpg"
+
+Requirements for image:
+- Display cleanly on desktop and mobile
+- Keep Clare’s face visible
+- Do not awkwardly crop the client or colour swatches
+- Use the existing site styling approach only
+- Do not create new global styles
+
+Intro copy:
+Free mini taster sessions available at Pub in the Park, Marlow.
+Find Clare on the Toria Lee Accessories stand on Saturday 16th and Sunday 17th May.
+
+Offer section:
+Enjoy 10% off a personalised colour analysis session when you quote
+“Pub in the Park”
+
+Your session is £135 (usually £150)
+
+Offer valid for bookings in May and June 2026.
+
+Booking copy:
+To book, email or message via WhatsApp to secure your appointment.
+
+Urgency line:
+Limited availability each day.
+
+TONE / STYLE:
+- Keep the page elegant, premium, warm, and consistent with the existing site
+- Make the offer and booking message very clear
+- Keep the layout simple and conversion-focused
+- Do not add unnecessary sections
+
+SEO:
+- Page title:
+Colour Analysis Marlow | Pub in the Park | The Colour Stylist
+- Meta description:
+Visit The Colour Stylist at Pub in the Park Marlow for free mini colour analysis sessions and an exclusive event offer.
+
+FINAL RULES:
+- Only create this one page
+- Do not change any existing files unless absolutely necessary to register this one page safely
+- If an existing file must be edited to add the route, keep it to the minimum possible change and do not alter anything else
+
+Before finishing, tell me:
+1. Exactly which files were created
+2. Exactly which existing files, if any, were modified
+3. Confirm that no config, build, deployment, package, or unrelated files were touched

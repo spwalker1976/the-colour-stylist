@@ -12,6 +12,7 @@ import ColourAnalysisInPerson from "@/pages/services/ColourAnalysisInPerson";
 import ColourAnalysisWithFriends from "@/pages/services/ColourAnalysisWithFriends";
 import WardrobeDeclutter from "@/pages/services/WardrobeDeclutter";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import PubInThePark from "@/pages/PubInThePark";
 import NotFound from "@/pages/not-found";
 
 function ScrollToTop() {
@@ -39,6 +40,7 @@ function Router() {
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/contact" component={Contact} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
+          <Route path="/pub-in-the-park-marlow" component={PubInThePark} />
           <Route component={NotFound} />
         </Switch>
       </div>
