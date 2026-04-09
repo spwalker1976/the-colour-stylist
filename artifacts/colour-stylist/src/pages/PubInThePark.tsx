@@ -55,14 +55,14 @@ export default function PubInThePark() {
       </section>
 
       {/* Offer */}
-      <section className="bg-white py-16 px-6">
-        <div className="max-w-2xl mx-auto">
-          <div className="border border-[hsl(350,20%,88%)] bg-[hsl(350,30%,97%)] rounded-sm px-8 py-10 text-center space-y-5">
+      <section className="bg-white py-16 md:py-28 px-6">
+        <div className="max-w-2xl md:max-w-4xl mx-auto">
+          <div className="border md:border-2 border-[hsl(350,20%,82%)] bg-[hsl(350,30%,97%)] rounded-sm px-8 md:px-20 py-10 md:py-20 text-center space-y-5 md:space-y-10">
             <p className="uppercase tracking-[0.18em] text-xs text-[hsl(185,42%,33%)] font-semibold">
               Exclusive Event Offer
             </p>
             <h2
-              className="text-[hsl(220,15%,22%)] text-2xl md:text-3xl leading-snug"
+              className="text-[hsl(220,15%,22%)] text-2xl md:text-6xl font-normal md:font-bold leading-snug"
               style={{ fontFamily: "var(--app-font-serif)" }}
             >
               Enjoy 10% off a personalised<br className="hidden md:block" /> colour analysis session
@@ -70,11 +70,11 @@ export default function PubInThePark() {
             <p className="text-[hsl(220,15%,40%)] text-base leading-relaxed">
               Quote <strong className="text-[hsl(220,15%,22%)]">"Pub in the Park"</strong> when you book.
             </p>
-            <div className="inline-block bg-white border border-[hsl(185,42%,33%)] rounded-sm px-6 py-4">
-              <p className="text-[hsl(185,42%,33%)] text-2xl font-semibold" style={{ fontFamily: "var(--app-font-serif)" }}>
+            <div className="inline-block bg-white border border-[hsl(185,42%,33%)] md:border-2 rounded-sm px-6 md:px-14 py-4 md:py-8">
+              <p className="text-[hsl(185,42%,33%)] text-2xl md:text-7xl font-semibold md:font-bold" style={{ fontFamily: "var(--app-font-serif)" }}>
                 £135
               </p>
-              <p className="text-[hsl(220,15%,50%)] text-sm mt-1">
+              <p className="text-[hsl(220,15%,50%)] text-sm md:text-base mt-1">
                 usually £150
               </p>
             </div>
