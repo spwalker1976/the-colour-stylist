@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import ServiceCard from "@/components/ServiceCard";
 import TestimonialCard from "@/components/TestimonialCard";
@@ -39,6 +40,10 @@ const services = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Colour Analysis in Marlow | Personal Colour Stylist Buckinghamshire";
+  }, []);
+
   return (
     <main>
       {/* Hero Section */}
@@ -47,14 +52,14 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
             {/* Left: Text */}
             <div>
-              <p className="section-label mb-5">Professional Colour Analysis · Marlow</p>
+              <p className="section-label mb-5">Personal Colour Stylist · Marlow, Buckinghamshire</p>
               <h1 className="font-serif text-[hsl(220,15%,22%)] text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.12] tracking-wide mb-7">
-                Discover the colours<br />
-                that make<br />
-                <em>you</em> glow
+                Colour Analysis in Marlow —<br />
+                discover the colours<br />
+                that make <em>you</em> glow
               </h1>
               <p className="text-[hsl(220,15%,40%)] text-base leading-relaxed mb-10 max-w-md">
-                Professional colour analysis in Marlow. Colour clarity for effortless style.
+                Professional colour analysis and wardrobe styling in Marlow, Buckinghamshire. Colour clarity for effortless style.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link href="/services" className="btn-teal no-underline">
@@ -79,7 +84,7 @@ export default function Home() {
               <div className="relative overflow-hidden" style={{ paddingTop: "120%" }}>
                 <img
                   src="/images/home-hero.jpg"
-                  alt="Clare performing a colour analysis session"
+                  alt="Colour analysis session in Marlow, Buckinghamshire"
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{ objectPosition: "center top" }}
                 />
@@ -100,7 +105,7 @@ export default function Home() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12">
           <div className="text-center mb-14">
             <h2 className="font-serif text-white text-3xl lg:text-4xl font-medium tracking-wide">
-              Services
+              Colour Analysis for Individuals and Groups
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -127,7 +132,7 @@ export default function Home() {
               <div className="relative overflow-hidden" style={{ paddingTop: "125%" }}>
                 <img
                   src="/images/about-clare.jpg"
-                  alt="Clare, The Colour Stylist"
+                  alt="Clare, personal colour stylist based in Marlow, Buckinghamshire"
                   className="absolute inset-0 w-full h-full object-cover"
                   style={{ objectPosition: "center top" }}
                 />
@@ -137,10 +142,10 @@ export default function Home() {
             <div>
               <p className="section-label mb-5">About Me</p>
               <h2 className="font-serif text-[hsl(220,15%,22%)] text-3xl lg:text-4xl font-medium mb-6 tracking-wide">
-                Hi, I'm Clare
+                Personal Colour Analysis in Marlow
               </h2>
               <div className="space-y-4 text-[hsl(220,15%,40%)] text-base leading-relaxed mb-8">
-                <p>A certified colour and image consultant based in Marlow. With 15 years' experience as a fashion buyer, I bring a practical, real-world approach to colour and style.</p>
+                <p>A certified colour and image consultant based in Marlow, Buckinghamshire. With 15 years' experience as a fashion buyer, I bring a practical, real-world approach to colour and style.</p>
                 <p>I offer one-to-one and small group personalised colour analysis sessions, designed to help you discover the colours that make you glow and feel confident in what you wear.</p>
                 <p>My approach is relaxed, considered and personal, creating a space where you can feel at ease while discovering what truly suits you.</p>
               </div>
@@ -172,7 +177,7 @@ export default function Home() {
             </div>
             <div className="relative order-first lg:order-last">
               <div className="relative overflow-hidden" style={{ paddingTop: "100%" }}>
-                <img src="/images/what-is-colour-analysis.jpg" alt="Colour analysis session" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/images/what-is-colour-analysis.jpg" alt="Personal colour analysis session using professional colour drapes" className="absolute inset-0 w-full h-full object-cover" />
               </div>
             </div>
           </div>

@@ -45,7 +45,7 @@ export default function PubInThePark() {
       <section className="bg-[hsl(350,30%,97%)] py-16 px-6">
         <div className="max-w-2xl mx-auto text-center space-y-5">
           <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed">
-            Free mini taster sessions available at Pub in the Park, Marlow.
+            Free mini colour analysis taster sessions available at Pub in the Park, Marlow, Buckinghamshire.
           </p>
           <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed">
             Find Clare on the <strong className="text-[hsl(220,15%,22%)]">Toria Lee Accessories</strong> stand on{" "}
