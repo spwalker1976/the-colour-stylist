@@ -18,11 +18,11 @@ export default function PubInThePark() {
   return (
     <main>
       {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-end bg-[hsl(220,15%,22%)] overflow-hidden">
+      <section className="relative min-h-[52vh] md:min-h-[70vh] flex items-end bg-[hsl(220,15%,22%)] overflow-hidden">
         <img
           src="/images/pub-in-the-park-marlow-colour-analysis.jpg"
           alt="Clare at Pub in the Park Marlow doing colour analysis"
-          className="absolute inset-0 w-full h-full object-cover object-top"
+          className="absolute inset-0 w-full h-full object-cover object-[35%_top] md:object-top"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 py-16 w-full">
