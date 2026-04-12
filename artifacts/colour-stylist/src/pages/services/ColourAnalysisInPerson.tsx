@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import ContactStrip from "@/components/ContactStrip";
 
@@ -22,6 +23,14 @@ const benefits = [
 ];
 
 export default function ColourAnalysisInPerson() {
+  useEffect(() => {
+    document.title = "Colour Analysis in Marlow | In Person Session | The Colour Stylist";
+    const meta = document.querySelector('meta[name="description"]');
+    if (meta) {
+      meta.setAttribute("content", "Book a personalised colour analysis in Marlow, Buckinghamshire with Clare. Discover the colours that suit you best with a one-to-one in-person session.");
+    }
+  }, []);
+
   return (
     <main>
       {/* Hero */}
@@ -38,7 +47,7 @@ export default function ColourAnalysisInPerson() {
           <h1
             className="font-serif text-white text-4xl lg:text-5xl font-medium leading-tight tracking-wide"
           >
-            In Person Colour Analysis
+            Colour Analysis in Marlow
           </h1>
         </div>
       </div>
@@ -47,6 +56,9 @@ export default function ColourAnalysisInPerson() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="max-w-2xl">
+            <p className="text-[hsl(220,15%,35%)] text-base leading-relaxed mb-5">
+              Based in Marlow, Buckinghamshire, Clare offers personalised colour analysis for women who want to feel more confident and effortless in what they wear. Whether you are new to colour analysis or ready to go deeper into your personal palette, this one-to-one in-person session is tailored entirely to you.
+            </p>
             <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed mb-5 italic">
               A personalised one-to-one colour analysis session in my Marlow studio. Discover the colours that make you glow.
             </p>
@@ -116,6 +128,9 @@ export default function ColourAnalysisInPerson() {
             </ul>
             <p className="text-[hsl(220,15%,50%)] text-sm italic leading-relaxed border-l-2 border-[hsl(185,42%,33%)] pl-4">
               In-person colour analysis sessions take place at my home in Marlow, with travel available by arrangement.
+            </p>
+            <p className="text-[hsl(220,15%,45%)] text-base leading-relaxed mt-6">
+              If you are looking for professional colour analysis in Marlow or the surrounding areas of Buckinghamshire, this session is designed to help you discover the colours that suit you best — and wear them with genuine confidence.
             </p>
           </div>
         </div>
