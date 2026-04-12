@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/in-person",
+      "destination": "/services/colour-analysis-in-person",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
