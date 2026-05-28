@@ -1,0 +1,75 @@
+Update ONLY the existing offer section/page that currently references “Pub in the Park”.
+
+STRICT GUARDRAILS:
+- Edit ONLY the existing Pub in the Park offer page/section
+- Do NOT modify any other files
+- Do NOT change routing, URLs, navigation, menus, homepage structure, service pages, or SEO across the rest of the site
+- Do NOT create any new pages
+- Do NOT modify any config, build, deployment, package, or environment files
+- Specifically do NOT touch:
+  - artifacts/colour-stylist/vite.config.ts
+  - artifacts/colour-stylist/vercel.json
+  - package.json
+  - tsconfig.json
+- Do NOT refactor components
+- Do NOT change global styles
+- Do NOT alter spacing or layout outside this section
+- Keep all existing responsive/mobile behaviour intact
+
+IMAGE UPDATE:
+Replace the current Pub in the Park hero image with:
+
+/public/images/pub-in-the-park-colour-analysis-session.jpg
+
+Use the existing image container and styling.
+Ensure the image crops nicely on mobile and desktop with faces clearly visible.
+
+CONTENT UPDATE:
+Remove ALL references to Pub in the Park, including ALL existing:
+- headings
+- dates
+- event references
+- discount wording
+- pricing wording
+- supporting text
+
+Replace the entire section content with:
+
+Eyebrow heading:
+INTRODUCTORY OFFER
+
+Main heading:
+Discover the colours that make you glow with a personalised 12-season colour analysis session.
+
+First offer box:
+£99
+for one person
+
+Second offer box:
+£150
+for two people together
+
+Supporting text:
+Perfect for friends, sisters, mums and daughters, or anyone who would love to experience colour analysis together.
+
+DESIGN REQUIREMENTS:
+- Keep styling premium and elegant
+- Match the existing website design system exactly
+- Keep same fonts, soft pale background, fine border styling, spacing, teal accent colour, and typography hierarchy
+- Maintain excellent readability on mobile
+- Ensure pricing boxes look balanced and aligned
+- Keep the section visually luxurious and uncluttered
+
+IMPORTANT:
+- Do NOT change any other content on the site
+- Do NOT touch favicon configuration
+- Do NOT touch metadata
+- Do NOT touch schema markup
+- Do NOT touch redirects
+- Do NOT touch Vercel configuration
+
+BEFORE FINISHING CONFIRM:
+1. Exact file modified
+2. Exact image path used
+3. Confirmation no other files were changed
+4. Confirmation no routing/config/build/Vercel/Vite files were touched

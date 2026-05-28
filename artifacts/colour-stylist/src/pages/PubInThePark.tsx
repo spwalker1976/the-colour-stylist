@@ -1,17 +1,14 @@
 import { useEffect } from "react";
 import { Link } from "wouter";
 
+const WHATSAPP_LINK = "https://wa.me/447974209963";
+
 export default function PubInThePark() {
   useEffect(() => {
-    document.title = "Colour Analysis Marlow | Pub in the Park | The Colour Stylist";
+    document.title = "Introductory Offer | Colour Analysis Marlow | The Colour Stylist";
     const meta = document.querySelector('meta[name="description"]');
     if (meta) {
-      meta.setAttribute("content", "Visit The Colour Stylist at Pub in the Park Marlow for free mini colour analysis sessions and an exclusive event offer.");
-    } else {
-      const newMeta = document.createElement("meta");
-      newMeta.name = "description";
-      newMeta.content = "Visit The Colour Stylist at Pub in the Park Marlow for free mini colour analysis sessions and an exclusive event offer.";
-      document.head.appendChild(newMeta);
+      meta.setAttribute("content", "An introductory colour analysis offer from The Colour Stylist in Marlow. Book a personalised 12-season colour analysis session for one or two people.");
     }
   }, []);
 
@@ -20,36 +17,23 @@ export default function PubInThePark() {
       {/* Hero */}
       <section className="relative h-[50vh] md:h-auto md:min-h-[70vh] flex items-end bg-[hsl(220,15%,22%)] overflow-hidden">
         <img
-          src="/images/pub-in-the-park-marlow-fashion-stand.jpg"
-          alt="Fashion stand and Pub in the Park Marlow banner by the river"
+          src="/images/pub-in-the-park-colour-analysis-session.jpg"
+          alt="Personalised colour analysis session in Marlow"
           className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 py-16 w-full">
           <p className="text-white/70 uppercase tracking-[0.2em] text-xs font-medium mb-4">
-            Pub in the Park · Marlow · 16–17 May 2026
+            The Colour Stylist · Marlow
           </p>
           <h1
             className="text-white text-4xl md:text-5xl leading-tight mb-4"
             style={{ fontFamily: "var(--app-font-serif)" }}
           >
-            Colour Analysis at<br />Pub in the Park Marlow
+            Discover the colours that<br />make you glow
           </h1>
           <p className="text-white/85 text-lg md:text-xl" style={{ fontFamily: "var(--app-font-serif)" }}>
-            Discover the colours that make you glow
-          </p>
-        </div>
-      </section>
-
-      {/* Intro */}
-      <section className="bg-[hsl(350,30%,97%)] py-16 px-6">
-        <div className="max-w-2xl mx-auto text-center space-y-5">
-          <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed">
-            Free mini colour analysis taster sessions available at Pub in the Park, Marlow, Buckinghamshire.
-          </p>
-          <p className="text-[hsl(220,15%,35%)] text-lg leading-relaxed">
-            Find Clare on the <strong className="text-[hsl(220,15%,22%)]">Toria Lee Accessories</strong> stand on{" "}
-            <strong className="text-[hsl(220,15%,22%)]">Saturday 16th and Sunday 17th May</strong>.
+            Personalised 12-season colour analysis in Marlow
           </p>
         </div>
       </section>
@@ -57,29 +41,39 @@ export default function PubInThePark() {
       {/* Offer */}
       <section className="bg-white py-16 md:py-28 px-6">
         <div className="max-w-2xl md:max-w-4xl mx-auto">
-          <div className="border md:border-2 border-[hsl(350,20%,82%)] bg-[hsl(350,30%,97%)] rounded-sm px-8 md:px-20 py-10 md:py-20 text-center space-y-5 md:space-y-10">
+          <div className="border md:border-2 border-[hsl(350,20%,82%)] bg-[hsl(350,30%,97%)] rounded-sm px-8 md:px-20 py-10 md:py-20 text-center space-y-8 md:space-y-12">
             <p className="uppercase tracking-[0.18em] text-xs text-[hsl(185,42%,33%)] font-semibold">
-              Exclusive Event Offer
+              Introductory Offer
             </p>
             <h2
-              className="text-[hsl(220,15%,22%)] text-2xl md:text-6xl font-normal md:font-bold leading-snug"
+              className="text-[hsl(220,15%,22%)] text-2xl md:text-5xl font-normal leading-snug"
               style={{ fontFamily: "var(--app-font-serif)" }}
             >
-              Enjoy 10% off a personalised<br className="hidden md:block" /> colour analysis session
+              Discover the colours that make you glow with a personalised 12-season colour analysis session.
             </h2>
-            <p className="text-[hsl(220,15%,40%)] text-base leading-relaxed">
-              Quote <strong className="text-[hsl(220,15%,22%)]">"Pub in the Park"</strong> when you book.
-            </p>
-            <div className="inline-block bg-white border border-[hsl(185,42%,33%)] md:border-2 rounded-sm px-6 md:px-14 py-4 md:py-8">
-              <p className="text-[hsl(185,42%,33%)] text-2xl md:text-7xl font-semibold md:font-bold" style={{ fontFamily: "var(--app-font-serif)" }}>
-                £135
-              </p>
-              <p className="text-[hsl(220,15%,50%)] text-sm md:text-base mt-1">
-                usually £150
-              </p>
+
+            {/* Pricing boxes */}
+            <div className="flex flex-col sm:flex-row gap-5 justify-center items-stretch">
+              <div className="flex-1 bg-white border border-[hsl(185,42%,33%)] rounded-sm px-6 py-8 text-center">
+                <p className="text-[hsl(185,42%,33%)] text-5xl md:text-6xl font-semibold" style={{ fontFamily: "var(--app-font-serif)" }}>
+                  £99
+                </p>
+                <p className="text-[hsl(220,15%,45%)] text-sm mt-3 leading-snug">
+                  for one person
+                </p>
+              </div>
+              <div className="flex-1 bg-white border border-[hsl(185,42%,33%)] rounded-sm px-6 py-8 text-center">
+                <p className="text-[hsl(185,42%,33%)] text-5xl md:text-6xl font-semibold" style={{ fontFamily: "var(--app-font-serif)" }}>
+                  £150
+                </p>
+                <p className="text-[hsl(220,15%,45%)] text-sm mt-3 leading-snug">
+                  for two people together
+                </p>
+              </div>
             </div>
-            <p className="text-[hsl(220,15%,50%)] text-sm">
-              Offer valid for bookings in May and June 2026.
+
+            <p className="text-[hsl(220,15%,45%)] text-base leading-relaxed max-w-xl mx-auto">
+              Perfect for friends, sisters, mums and daughters, or anyone who would love to experience colour analysis together.
             </p>
           </div>
         </div>
@@ -97,12 +91,9 @@ export default function PubInThePark() {
           <p className="text-white/75 text-base leading-relaxed">
             To book, email or message via WhatsApp to secure your appointment.
           </p>
-          <p className="text-white/60 text-sm tracking-wide uppercase">
-            Limited availability each day.
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
             <a
-              href="https://wa.me/447974209963"
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-teal inline-flex items-center justify-center gap-2 px-7 py-3 text-sm font-medium tracking-wide rounded-sm no-underline"
